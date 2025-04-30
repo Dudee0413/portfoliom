@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <title>Az én portfólióm</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">  <!-- Karakterkódolás – ékezetek megjelenjenek -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ez biztosítja, hogy mobilon is jól jelenjen meg -->
+    <title>Portfólió - Zoltan R. Dudas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- ====== Oldal fő fejléc: Portfólió cím és menügombok ====== -->
+    <header class="site-header">
+        <h2>Portfólió</h2>
+        <nav>
+          <!-- Menüpontok, amelyek később adott szakaszokra ugranak -->
+          <a href="#about">Rólam</a>
+          <a href="#skills">Képességek</a>
+          <a href="#projects">Projektek</a>
+          <a href="#contact">Kapcsolat</a>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Zoltán</h1>
-    <p>Kezdő webfejlesztő</p>
-  </header>
+    <!-- ====== A névjegykártya tartalom dobozban (fehér blokk) ====== -->
+    <main>
+        <div class="card">
+            <!-- Kártyán belüli fejléc – név, kép, bemutatkozás -->
+            <header>
+                <img src="profilkep.jpeg" alt="profilkep" id="profilkep">
+                <h1>Zoltán Richard Dudás</h1>
+                <p>Bemutatkozó szöveg</p>
+            </header>
+            <section id="skills" >
+                <h2>Képességeim</h2>
+                <ul>
+                     <li>HTML & CSS (alap)</li>
+                     <li>GitHub használata</li>
+                     <li>Live Server használata</li>
+                     <li>Önálló tanulás, projektek kezelése</li>
+                </ul>
+            </section>
+            
+            <section id="education">
+                <h2>Tanulmányok</h2>
+                <p>Korábbi tanulmányok: Középiskola</p>
+            </section>
 
-  <section id="about">
-    <h2>Rólam</h2>
-    <p>Lelkes tanuló vagyok, aki szeret új dolgokat felfedezni, csapatban dolgozni és fejlődni a webfejlesztés világában.</p>
-    <p></p>
-  </section>
+            <section id="hobbies">
+                <h2>Hobbik</h2>
+                <p>Szeretek tanulni, kirandulni és kódolni.</p>
+            </section>
 
-  <section id="skills">
-    <h2>Képességeim</h2>
-    <ul>
-      <li>HTML Alapok</li>
-      <li>CSS Alapok</li>
-      <li>Kitartás és folyamatos tanulás</li>
-      <li>Csapatmunka és kreativitás</li>
-    </ul>
-  </section>
+            <!-- Kártyán belüli lábléc – elérhetőségek -->
+            <footer>
+            <p>Elérhetőség: dudaszoltanrichard@gmail.com | +36.......</p>
+            </footer>
+        </div>
+    </main>
 
-  <section>
-    <h2>Hobbijaim</h2>
-    <p>Szeretek utazni és új kúlturákat megismerni.</p>
-    <p>Szeretek jógázni és falatmászni, éppen egy jóga oktatoi képzést csinlok.</p>
-  </section>
-
-  <section>
-    <h2>Céljaim</h2>
-    <p>Szoftverfejlesztő szeretnék lenni.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projektjeim</h2>
-    <ul>
-      <li>Portfólió weboldal</li>
-      <li>Számológép</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Kapcsolat</h2>
-    <p>Email: <a href="mailto:zoltantanar@example.com">zoltanricharddudas@gmail.com</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Zoltán. Minden jog fenntartva.</p>
-  </footer>
-
+    
 </body>
 </html>
