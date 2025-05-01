@@ -34,6 +34,48 @@ html, body {
     color: #ffcc00;
   }
 
+  /* Lenyíló Menü (Dropdown) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    background-color: #555;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #444;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #2ce706;
+  }
+  
+  
+  
+
 
   /* 3. Névjegykártya doboz */
   .card {
@@ -151,5 +193,7 @@ html, body {
     text-align: center;
   }
 }
+
+
 
 
