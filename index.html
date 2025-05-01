@@ -11,13 +11,18 @@
     <!-- ====== Oldal fő fejléc: Portfólió cím és menügombok ====== -->
     <header class="site-header">
         <h2>Portfólió</h2>
-        <nav>
-          <!-- Menüpontok, amelyek később adott szakaszokra ugranak -->
-          <a href="#about">Rólam</a>
-          <a href="#skills">Képességek</a>
-          <a href="#projects">Projektek</a>
-          <a href="#contact">Kapcsolat</a>
-        </nav>
+
+        <!-- Menü alapja  -->
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleMenu()">Menü</button>
+            <div class="dropdown-content" id="dropdown-menu" >
+                <!-- Menüpontok, amelyek később adott szakaszokra ugranak -->
+                <a href="#about">Rólam</a>
+                <a href="#skills">Képességek</a>
+                <a href="#projects">Projektek</a>
+                <a href="#contact">Kapcsolat</a>
+            </div>
+        </div>
     </header>
 
     <!-- ====== A névjegykártya tartalom dobozban (fehér blokk) ====== -->
@@ -81,6 +86,15 @@
         <p>📞 +36 703419904</p>
         <p>© 2025 Zoltán Richard Dudás – Minden jog fenntartva.</p>
     </footer>   
+
+    <script>
+        function toggleMenu() {
+          const menu = document.getElementById("dropdown-menu");
+          menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+      </script>
+      
 </body>
 </html>
+
 
